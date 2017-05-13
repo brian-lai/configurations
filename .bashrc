@@ -119,35 +119,14 @@ function debug {
     cat $1 | mojo nopaste shadowcat
 }
 
-alias devdb='psql -U socialflow_web -h pg-site.dev.saturn.sfsrv.net -d sf_web'
-alias proddb='psql -U prod_user -h ro.pg-site.prod.priv.sf -d sf_web'
-#alias startup='SITE_ENVIRONMENT=dev SOCIALFLOW_WEB_PATH=~/yml CATALYST_DEBUG=1 DBIC_TRACE="1=/tmp/dbic_trace.log" DBIC_TRACE_PROFILE=console plackup -s Starman --workers 3 -E test -port 6732 socialflow_web.psgi | tee -a plack.log'
-alias startup='SITE_ENVIRONMENT=dev SOCIALFLOW_WEB_PATH=~/yml plackup -s Starman --workers 3 -E test -port 6732 socialflow_web.psgi | tee -a plack.log'
-
-#alias sf_web_app='SITE_ENVIRONMENT=dev SOCIALFLOW_WEB_PATH=/etc/socialflow/SocialFlow-Web-Config/ CATALYST_DEBUG=1 DBIC_TRACE="1=/tmp/dbic_trace.log" DBIC_TRACE_PROFILE=console $HOME/perl5/bin/plackup -s Starman --workers 3 --port 6732 2>/tmp/plack.log'
-alias sfcpanm='cpanm --mirror=http://cpan-mirror.dev.saturn.sflow.us:25123 --mirror-only'
 alias grepc='grep --color -rn'
-alias sfworker='SITE_ENVIRONMENT=dev perl bin/sf-workqueue workers --job'
-alias venv='source ~/virtualenv/bin/activate'
-alias npm='~/node/bin/npm'
-alias node='~/node/bin/node'
-alias sassy='sass --watch root/static/scss:root/static/css'
 alias tad='tmux attach -d'
 alias gbd='git branch -D'
 
-# REMOVE AFTER TESTING
-alias testsfadspy='python main.py --facebook_file data/fb.json --facebook_link https://facebook.com/10153193703181367 --outfile output/OutputWrapReport.pptx'
-
-export PYTHONPATH=$PYTHONPATH:/home/blai/virtualenv
-export PYTHONPATH=$HOME/dev_sf/py/python-pptx:$PYTHONPATH
 export PATH=$PATH:~/perl5/bin/
 export PATH=$PATH:~/perl5/lib/perl5/
 export PATH=$PATH:~/node/bin/
-export PATH=/home/blai/phantomjs-2.1.1-linux-x86_64/bin:$PATH
-export SOCIALFLOW_WEB_PATH=~/yml
 
-#export HISTSIZE=300000
-#export HISTCONTROL=ignorespace:ignoredups
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 

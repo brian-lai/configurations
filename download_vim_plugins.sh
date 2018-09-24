@@ -11,6 +11,8 @@ git clone https://github.com/kristijanhusak/vim-hybrid-material ~/.vim/bundle/vi
 git clone https://github.com/sheerun/vim-polyglot.git ~/.vim/bundle/vim-polyglot
 git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 
+# install git completion
+brew install git bash-completion
 
 # special steps for solarized color
 cd ~/.vim/bundle

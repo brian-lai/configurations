@@ -109,26 +109,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-function dl {
-    if [ -z "$(type -t devel-local)"  ]; then
-        source ~/perl5/bin/devel-local.sh
-    fi
-    devel-local $@;
-}
-function debug {
-    cat $1 | mojo nopaste shadowcat
-}
-
-alias grepc='grep --color -rn'
+alias grepc='grep --color -Rn'
 alias tad='tmux attach -d'
 alias gbd='git branch -D'
-
-export PATH=$PATH:~/perl5/bin/
-export PATH=$PATH:~/perl5/lib/perl5/
-export PATH=$PATH:~/node/bin/
 
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
-eval $( perl -Mlocal::lib )
-source `which devel-local.sh`

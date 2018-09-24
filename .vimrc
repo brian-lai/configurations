@@ -1,8 +1,8 @@
 set number
-set tabstop=4 
+set tabstop=2 
 set softtabstop=0 
 set expandtab 
-set shiftwidth=4
+set shiftwidth=2
 
 filetype plugin indent on
 execute pathogen#infect()
@@ -17,6 +17,7 @@ colorscheme hybrid_material
 "set statusline+=%*
 
 "NERDTREE settings
+let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
 inoremap {      {}<Left>
@@ -32,3 +33,9 @@ let g:syntastic_check_wq = 0
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['html'] }
 " /syntastic recommended settings
 :iabbrev </ </<C-X><C-O>
+
+
+"convenient maps
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode

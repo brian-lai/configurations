@@ -4,6 +4,10 @@ set softtabstop=0
 set expandtab 
 set shiftwidth=2
 
+" useful vim thingies
+set hlsearch
+set statusline+=%F
+
 filetype plugin indent on
 execute pathogen#infect()
 
@@ -20,7 +24,7 @@ colorscheme hybrid_material
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
-inoremap {      {}<Left>
+" inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}

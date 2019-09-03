@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Instructions
 
 For Macs:
@@ -10,3 +11,8 @@ For Macs:
 `chmod 744 download_vim_plugins.sh`
 
 -- This will make the shell script executable. 
+=======
+# dotfiles
+
+useful configurations and shell script
+>>>>>>> e7f9e4285c3e68b193102a86fcecd788a29b8476

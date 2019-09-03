@@ -88,6 +88,7 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
+alias la='ls -la'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -111,8 +112,41 @@ fi
 
 alias grepc='grep --color -Rn'
 alias tad='tmux attach -d'
-alias gbd='git branch -D'
+alias dev_db='psql -h localhost -p 5436 -d rc_local_db -U rc_local_db_superuser'
+alias staging_db='psql -h db-stg.phosphorus.com -U DB_dJvQJhN34PEcr -d DB_dJvQJhN34PEcr'
+alias prod_db='psql -h db.phosphorus.com -U DB_dJvQJhN34PEcr -d DB_dJvQJhN34PEcr'
+alias reload='source ~/.bash_profile'
+alias ssl_pone='ruby bin/rails server -b "ssl://localhost:3003?key=../TMP/ssl_certs/server.key&cert=../TMP/ssl_certs/server.crt" -e development'
 
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+
+
+
+# git stuff
+alias gbd='git branch -D'
+alias gp='git push --set-upstream origin HEAD'
+alias gs='git status'
+alias gb='git branch'
+alias gc='git checkout'
+
+squash() {
+  git reset --soft HEAD~$1
+  git commit
+}
+
+
+# Other stuff
+
+pt-archives() {
+	curl -sH "X-Papertrail-Token: $0" https://papertrailapp.com/api/v1/archives.json |
+		grep -o '"filename":"[^"]*"' | egrep -o '[0-9-]+' |
+		awk '$0 >= "YYYY-MM-DD" && $0 < "YYYY-MM-DD" {
+			print "output " $0 ".tsv.gz"
+			print "url https://papertrailapp.com/api/v1/archives/" $0 "/download"
+		}' | curl --progress-bar -fLH "X-Papertrail-Token: $0" -K-
+}

@@ -14,6 +14,7 @@ git clone https://github.com/tpope/vim-commentary.git ~/.vim/bundle/vim-commenta
 git clone https://github.com/kristijanhusak/vim-hybrid-material ~/.vim/bundle/vim-hybrid-material
 git clone https://github.com/sheerun/vim-polyglot.git ~/.vim/bundle/vim-polyglot
 git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
+git clone https://github.com/wincent/Command-T.git ~/.vim/bundle/Command-T
 
 # install git completion
 brew install git bash-completion

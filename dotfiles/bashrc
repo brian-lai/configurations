@@ -115,4 +115,3 @@ alias gbd='git branch -D'
 
 shopt -s histappend
 PROMPT_COMMAND='history -a'
-

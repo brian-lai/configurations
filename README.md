@@ -1,18 +1,18 @@
-<<<<<<< HEAD
-# Instructions
+# Stuff to turn Macs into a great development machine
+
+
+## Instructions
 
 For Macs:
-
 - make sure you have Homebrew installed
-- make sure you have git installed (you can't clone this repo without git anyway
 
 #### To run the script, you'll have to run the following
 
-`chmod 744 download_vim_plugins.sh`
+`chmod 744 configure1.sh && chmod 744 configure2.sh`
 
--- This will make the shell script executable. 
-=======
-# dotfiles
+-- This will make the shell scripts executable. 
 
-useful configurations and shell script
->>>>>>> e7f9e4285c3e68b193102a86fcecd788a29b8476
+
+## Dotfiles
+
+useful configurations and shell scripts

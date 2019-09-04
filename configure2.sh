@@ -20,6 +20,7 @@ git clone https://github.com/wincent/Command-T.git ~/.vim/bundle/Command-T
 
 # install git completion
 brew install git bash-completion
+brew install tmux
 
 # special steps for solarized color
 cd ~/.vim/bundle
@@ -27,3 +28,22 @@ git clone git://github.com/altercation/vim-colors-solarized.git
 
 mv vim-colors-solarized ~/.vim/bundle/
 
+#################
+# iterm2 stuff
+mkdir ~/.iterm2
+cp ./iterm2/com.googlecode.iterm2.plist ~/.iterm2/
+
+###########
+# COPY dot files into home directory
+cp ./dotfiles/bashrc ~/.bashrc
+cp ./dotfiles/bash_profile ~/.bash_profile
+cp ./dotfiles/profile ~/.profile
+cp ./dotfiles/vimrc ~/.vimrc
+cp ./dotfiles/tmux.conf ~/.tmux.conf
+
+source ~/.bash_profile
+
+##########
+# additional configurations
+echo 'set completion-ignore-case On' >> ~/.inputrc
+echo '*.swp' >> ~/.gitignore && git config --global core.excludesfile ~/.gitignore

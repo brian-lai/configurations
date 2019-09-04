@@ -83,6 +83,8 @@ tap 'homebrew/services'
 tap 'heroku/brew'
 brew 'git'
 brew 'git-lfs'
+brew 'bash-completion'
+brew 'tmux'
 brew 'openssl'
 brew 'libyaml'                              # should come after openssl
 cask 'java'
@@ -116,4 +118,7 @@ pip_install_or_upgrade 'pip'
 pip_install_or_upgrade 'awscli'
 pip_install_or_upgrade 'awsebcli'
 
-node_version="10"
+#################
+# iterm2 stuff
+mkdir ~/.iterm2
+cp ./iterm2/com.googlecode.iterm2.plist ~/.iterm2/

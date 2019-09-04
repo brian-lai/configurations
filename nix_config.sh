@@ -18,20 +18,11 @@ git clone https://github.com/sheerun/vim-polyglot.git ~/.vim/bundle/vim-polyglot
 git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 git clone https://github.com/wincent/Command-T.git ~/.vim/bundle/Command-T
 
-# install git completion
-brew install git bash-completion
-brew install tmux
-
 # special steps for solarized color
 cd ~/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
 
 mv vim-colors-solarized ~/.vim/bundle/
-
-#################
-# iterm2 stuff
-mkdir ~/.iterm2
-cp ./iterm2/com.googlecode.iterm2.plist ~/.iterm2/
 
 ###########
 # COPY dot files into home directory

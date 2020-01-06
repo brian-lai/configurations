@@ -103,6 +103,7 @@ brew 'python'                               # for pip to install awscli
 brew 'parallel'
 brew 'gpg2'
 brew 'nvm'
+brew 'fzf'
 brew 'heroku/brew/heroku'
 # Useful apps
 cask 'google-chrome'

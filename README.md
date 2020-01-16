@@ -25,3 +25,6 @@ useful configurations and shell scripts
 - goto-definition
 - intellij-idea-keymap
 - language-env
+- language-psql
+- atom-psql
+- atom-beautify

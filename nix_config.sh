@@ -1,4 +1,7 @@
 #! /bin/bash
+brew install fzf
+brew install pgcli
+
 # Script to download vim plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -17,6 +20,7 @@ git clone https://github.com/kristijanhusak/vim-hybrid-material ~/.vim/bundle/vi
 git clone https://github.com/sheerun/vim-polyglot.git ~/.vim/bundle/vim-polyglot
 git clone https://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 git clone https://github.com/wincent/Command-T.git ~/.vim/bundle/Command-T
+git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 
 # special steps for solarized color
 cd ~/.vim/bundle

@@ -104,6 +104,7 @@ brew 'parallel'
 brew 'gpg2'
 brew 'nvm'
 brew 'fzf'
+brew 'pgcli'
 brew 'heroku/brew/heroku'
 # Useful apps
 cask 'google-chrome'

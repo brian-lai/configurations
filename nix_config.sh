@@ -1,5 +1,6 @@
 #! /bin/bash
 brew install fzf
+brew install pgcli
 
 # Script to download vim plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle

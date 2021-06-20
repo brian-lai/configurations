@@ -115,3 +115,6 @@ alias gbd='git branch -D'
 
 shopt -s histappend
 PROMPT_COMMAND='history -a'
+
+
+source ~/git-completion.bash

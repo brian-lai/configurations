@@ -124,3 +124,10 @@ pip_install_or_upgrade 'awsebcli'
 # iterm2 stuff
 mkdir ~/.iterm2
 cp ./iterm2/com.googlecode.iterm2.plist ~/.iterm2/
+
+
+
+###############
+# git completion shell script
+cd
+curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash

@@ -15,8 +15,3 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[user]
-	name = Brian Lai
-	email = brian.lai@phosphorus.com
-[core]
-	excludesfile = /Users/brian-phosphorus/.gitignore

@@ -32,6 +32,7 @@ cp dotfiles/bash_profile ~/.bash_profile
 cp dotfiles/profile ~/.profile
 cp dotfiles/vimrc ~/.vimrc
 cp dotfiles/tmux.conf ~/.tmux.conf
+cp dotfiles/gitconfig ~/.gitconfig
 
 source ~/.bash_profile
 

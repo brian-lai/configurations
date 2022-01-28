@@ -111,7 +111,6 @@ fi
 
 alias grepc='grep --color -Rn'
 alias tad='tmux attach -d'
-alias gbd='git branch -D'
 
 shopt -s histappend
 PROMPT_COMMAND='history -a'

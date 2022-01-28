@@ -30,11 +30,11 @@ mv vim-colors-solarized ~/.vim/bundle/
 
 ###########
 # COPY dot files into home directory
-cp ./dotfiles/bashrc ~/.bashrc
-cp ./dotfiles/bash_profile ~/.bash_profile
-cp ./dotfiles/profile ~/.profile
-cp ./dotfiles/vimrc ~/.vimrc
-cp ./dotfiles/tmux.conf ~/.tmux.conf
+cp dotfiles/bashrc ~/.bashrc
+cp dotfiles/bash_profile ~/.bash_profile
+cp dotfiles/profile ~/.profile
+cp dotfiles/vimrc ~/.vimrc
+cp dotfiles/tmux.conf ~/.tmux.conf
 
 source ~/.bash_profile
 

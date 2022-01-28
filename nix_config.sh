@@ -1,6 +1,6 @@
 #! /bin/bash
 sudo apt update
-sudo apt install pgcli tmux
+sudo apt install pgcli tmux git-core bash-completion
 
 # Script to download vim plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -23,10 +23,7 @@ git clone https://github.com/wincent/Command-T.git ~/.vim/bundle/Command-T
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 
 # special steps for solarized color
-cd ~/.vim/bundle
-git clone git://github.com/altercation/vim-colors-solarized.git
-
-mv vim-colors-solarized ~/.vim/bundle/
+git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
 
 ###########
 # COPY dot files into home directory

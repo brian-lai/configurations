@@ -1,6 +1,6 @@
 #! /bin/bash
-brew install fzf
-brew install pgcli
+sudo apt update
+sudo apt install pgcli tmux
 
 # Script to download vim plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle

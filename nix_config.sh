@@ -23,7 +23,7 @@ git clone https://github.com/wincent/Command-T.git ~/.vim/bundle/Command-T
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 
 # special steps for solarized color
-git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
+git clone git@github.com:altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
 
 ###########
 # COPY dot files into home directory
